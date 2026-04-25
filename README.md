@@ -16,7 +16,7 @@
 | [lab5-perflab](./lab5-perflab)     | cache-aware C 优化         | `kernels.c`                                        | best `Rotate 33.6`，`Smooth 117.9` |
 | [lab6-cachelab](./lab6-cachelab)   | cache simulator 与矩阵转置优化  | `csim.c`、`trans.c`                                 | `csim 27/27`，Part B `53/53`       |
 | [lab7-shlab](./lab7-shlab)         | shell、job control、signal | `tsh.c`                                            | `trace01-16` 全通过                  |
-| [lab8-malloclab](./lab8-malloclab) | allocator 设计与性能权衡        | `mm.c`                                             | `69/100`                          |
+| [lab8-malloclab](./lab8-malloclab) | allocator 设计与性能权衡        | `mm.c`                                             | `78/100`                          |
 | [lab9-proxylab](./lab9-proxylab)   | 并发网络代理与缓存                | `proxy.c`                                          | `70/70`                           |
 
 
