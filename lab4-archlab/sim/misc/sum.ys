@@ -1,0 +1,40 @@
+	.pos 0
+	irmovq stack, %rsp  	# Set up stack pointer
+	call main		# Execute main program
+	halt			# Terminate program 
+	
+.align 8
+ele1:
+    .quad 0x00a
+    .quad ele2
+ele2:
+    .quad 0x0b0
+    .quad ele3
+ele3:
+    .quad 0xc00
+    .quad 0
+# END
+
+main:	
+	irmovq ele1,%rdi  
+	call rsum_list		
+	ret
+
+# long rsum_list(long i)
+# ele1 in %rdi
+rsum_list:	
+    pushq %rbx          
+	xorq %rax,%rax           
+    andq %rdi, %rdi
+    je finish
+    mrmovq (%rdi), %rbx  
+    mrmovq 8(%rdi), %rdi 
+    call rsum_list
+    addq %rbx, %rax 
+
+finish:
+    popq %rbx            
+	ret                  
+
+	.pos 0x200
+stack:

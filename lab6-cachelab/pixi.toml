@@ -1,0 +1,11 @@
+[workspace]
+authors = ["AkiraKubrick <a18526439761@gmail.com>"]
+channels = ["conda-forge"]
+name = "lab6-cachelab"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "2.*"

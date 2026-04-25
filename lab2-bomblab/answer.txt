@@ -1,0 +1,9 @@
+详细解题思路见 bomblab_ansnote.pdf
+
+phase1答案:Border relations with Canada have never been better.
+phase2答案:1 2 4 8 16 32
+phase3答案:0 207(此题答案不唯一)
+phase4答案:7 0
+phase5答案:9?>567
+phase6答案:4 3 2 1 6 5
+隐藏关解法:在第四题目的现有答案后加上“ DrEvil”就可以进入隐藏关，在解开phase6以后输入字符串“22”
